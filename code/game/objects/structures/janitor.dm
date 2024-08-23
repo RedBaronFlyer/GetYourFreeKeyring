@@ -80,6 +80,7 @@
 
 /obj/structure/mop_bucket/janitorialcart/Initialize(mapload)
 	. = ..()
+	reagents.maximum_volume *= 2.5
 	GLOB.janitor_devices += src
 
 /obj/structure/mop_bucket/janitorialcart/Destroy()
